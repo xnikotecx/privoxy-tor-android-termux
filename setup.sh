@@ -1,2 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
-privoxy --no-daemon privoxy.cfg
+apt update
+apt install privoxy -y
