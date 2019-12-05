@@ -28,6 +28,8 @@ On termux, from the cloned repo root path:
 ./privoxy.start
 ```
 
+Open the Tor Browser, and keep it open (otherwise http proxy won't be able to communicate to socks5 proxy)
+
 Now configure every Wifi Network to use an http proxy (on Proxy Section that should exist, of course)
 
 Proxy Host: _127.0.0.1_
