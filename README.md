@@ -51,4 +51,4 @@ Using tcpdump, you should see traffic going to the tor guard and back to you.
 
 I also recommend you to hit the "NEW IDENTITY" button on Tor Browser Notification status once in a while.
 
-DNS requests will still be leaked. This setup provides well enough privacy against surveillance and fingerprinting, but... for a completely anonymous experience, use the actual Tor Browser.
+DNS and non-web-oriented protocol requests will still be leaked (i guess). This setup provides well enough privacy against surveillance and fingerprinting, but... for a completely anonymous experience, use the actual Tor Browser.
