@@ -32,8 +32,7 @@ Open the Tor Browser, and keep it open (otherwise http proxy won't be able to co
 
 Now configure every Wifi Network to use an http proxy (on Proxy Section that should exist, of course)
 
-Proxy Host: _127.0.0.1_
-Proxy Port: _9051_
+Proxy Host `127.0.0.1` Proxy Port: `9051`
 
 Or complete URL if required: http://127.0.0.1:9051
 
