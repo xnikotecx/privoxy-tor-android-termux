@@ -7,6 +7,7 @@ It does more things, but we will use it as a http to socks5 bridge to gateway to
 # Requirements
 
 - Android device
+- Root access (only for DNS using socat to bind the 53 port)
 - Tor Browser installed (https://torproject.org/download/#android)
 - Termux installed on Android (download recommended from F-Droid)
 - git package installed on termux `apt update; apt install git`
