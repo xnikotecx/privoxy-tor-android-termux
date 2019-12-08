@@ -10,6 +10,7 @@ It does more things, but we will use it as a http to socks5 bridge to gateway to
 - Tor Browser installed (https://torproject.org/download/#android)
 - Termux installed on Android (download recommended from F-Droid)
 - git package installed on termux `apt update; apt install git`
+- socat package installed on termux `apt install socat`
 
 
 # Installation (on Termux)
@@ -24,8 +25,11 @@ cd privoxy-tor-android-termux/
 
 On termux, from the cloned repo root path:
 
+Run both either on background, or on separate terminals, if you wish
+
 ```bash
 ./privoxy.start
+./privoxy.dns.start
 ```
 
 Open the Tor Browser, and keep it open (otherwise http proxy won't be able to communicate to socks5 proxy)
@@ -36,10 +40,13 @@ Proxy Host `127.0.0.1` Proxy Port: `9051`
 
 Or complete URL if required: http://127.0.0.1:9051
 
+!! DNS settings to `127.0.0.1`
+
+
 Wolaah! You are now using your Tor Browser's bridge for every App!!
 
 
-## Important NOTICE
+## Important NOTICE (this is not a transparent proxy)
 
 Keep in mind that system Apps could be able to avoid the proxy.
 As well as an Android app creating an http/https request spawning a new process that is not dalvik, will not use this proxy.
@@ -51,4 +58,4 @@ Using tcpdump, you should see traffic going to the tor guard and back to you.
 
 I also recommend you to hit the "NEW IDENTITY" button on Tor Browser Notification status once in a while.
 
-DNS and non-web-oriented protocol requests will still be leaked (i guess). This setup provides well enough privacy against surveillance and fingerprinting, but... for a completely anonymous experience, use the actual Tor Browser.
+Non-web-oriented protocol requests (such as XMPP, Normal TCP sockets) will still be leaked. Only http/https requests + dns resolving will be bridged to tor.

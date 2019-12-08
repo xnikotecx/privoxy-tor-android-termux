@@ -1,0 +1,2 @@
+#!/data/data/com.termux/files/usr/bin/bash
+socat -T15 udp4-recvfrom:53,reuseaddr,fork udp:127.0.0.1:5400
