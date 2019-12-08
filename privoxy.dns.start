@@ -1,2 +1,2 @@
 #!/data/data/com.termux/files/usr/bin/bash
-su -c 'socat -T15 udp4-recvfrom:53,reuseaddr,fork udp:127.0.0.1:5400'
+su -c "PATH=$PATH:/data/data/com.termux/files/usr/bin; socat -T15 udp4-recvfrom:53,reuseaddr,fork udp:127.0.0.1:5400"
