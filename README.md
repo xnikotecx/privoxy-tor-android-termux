@@ -17,7 +17,7 @@ It does more things, but we will use it as a http to socks5 bridge to gateway to
 # Installation (on Termux)
 
 ```bash
-git clone https://github.com/xnikotecx/privoxy-tor-android-termux
+git clone https://github.com/xnikotecx/privoxy-tor-android-termux.git
 cd privoxy-tor-android-termux/
 ./setup.sh
 ```
